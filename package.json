@@ -1,0 +1,23 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "description": "Sitio Web. Proyecto Final. Coderhouse.",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Geb1908/FGBbrothers.git"
+  },
+  "keywords": [
+    "Web",
+    "Design"
+  ],
+  "author": "GEB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Geb1908/FGBbrothers/issues"
+  },
+  "homepage": "https://github.com/Geb1908/FGBbrothers#readme"
+}
