@@ -1,0 +1,230 @@
+/* START CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* END CSS RESET */
+/* START BACKGROUNDS INDEX */
+body {
+  background-color: #ffffff;
+}
+
+@media (min-width: 992px) {
+  body {
+    background-color: #ffffff;
+  }
+}
+/* END BACKGROUNDS INDEX */
+/* START BACKGROUNDS PAGES */
+#body {
+  background: linear-gradient(90deg, #c3c8c3 0%, #fdfdfd 35.94%, #ffffff 100%);
+}
+
+#main {
+  padding: 5rem 0.5rem 8rem 0.5rem;
+  background: none;
+}
+
+/* END BACKGROUNDS PAGES */
+/* START TYPOGRAPHY */
+h1 {
+  font: normal 800 40px/50px "Noto Sans";
+  color: #10203a;
+}
+h1 span {
+  color: #4284ed;
+}
+
+h2 {
+  font: normal 700 16px/20px "Montserrat";
+  padding: 0.5rem 1.25rem;
+  border-radius: 10px;
+  color: #4284ed;
+  background-color: rgba(66, 132, 237, 0.5);
+}
+
+h3 {
+  font: normal 700 20px/25px "Noto Sans";
+  color: #000000;
+}
+
+h4 {
+  font: normal 700 36px/50px "Noto Sans";
+  color: #000000;
+}
+
+h5 {
+  font: normal 700 16px/20px "Noto Sans";
+  color: #000000;
+}
+
+p, .contact .row .column ul li, li span {
+  font: normal 400 16px/25px "Montserrat";
+  color: #000000;
+}
+p span, .contact .row .column ul li span, li span span {
+  font-size: 14px;
+}
+
+a {
+  font: normal 400 14px/16px "Montserrat";
+  color: #000000;
+}
+a.--active span {
+  font-weight: 700;
+}
+a.--active span:hover {
+  color: #ffffff;
+}
+a span {
+  font-weight: 700;
+}
+a span:hover {
+  color: #7df594;
+}
+
+i {
+  color: #000000;
+}
+
+.btn--primary {
+  font: normal 700 20px/25px "Montserrat";
+  color: #ffffff;
+}
+.btn--primary span {
+  color: #000000;
+}
+
+.btn--secondary {
+  font: normal 700 14px/16px "Montserrat";
+  color: #ffffff;
+}
+.btn--secondary span {
+  color: #000000;
+}
+
+.btn--subscribe {
+  font: normal 700 16px/20px "Montserrat";
+  color: #ffffff;
+}
+
+.footer__text {
+  font: normal 400 12px/20px "Montserrat";
+  color: #000000;
+}
+
+.footer__copyright {
+  font: normal 400 10px/14px "Montserrat";
+  color: #000000;
+}
+.footer__copyright a {
+  font-size: 10px;
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 64px;
+    line-height: 87px;
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: 43px;
+  }
+
+  h3 {
+    font-size: 36px;
+    line-height: 49px;
+  }
+
+  h4 {
+    font-size: 48px;
+    line-height: 65px;
+  }
+
+  h5 {
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  p, li span, .contact .row .column ul li {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  p span, li span span, .contact .row .column ul li span {
+    font-size: 20px;
+  }
+
+  a {
+    font-size: 20px;
+  }
+
+  .footer__navLink {
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+  }
+}
+/* END TYPOGRAPHY */
+/* START lAYOUT HEADER */
+header {
+  text-align: center;
+  width: 100%;
+  padding: 1rem 0.5rem 1.5rem 0.5rem;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: top 0.3s;
+}
+header a img {
+  width: 40%;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  padding: 1.5rem 0 0.75rem 0;
+}
+header .btn--primary {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+  }
+  header a img {
+    width: 70%;
+  }
+  header nav {
+    width: 75%;
+  }
+  header nav ul {
+    padding: 0;
+  }
+}
+@media (min-width: 992px) {
+  header {
+    padding: 1rem 2rem 0.5rem 2rem;
+  }
+  header .btn--primary {
+    display: flex;
+  }
+}
+/* END lAYOUT HEADER */
+
+/*# sourceMappingURL=styles.css.map */

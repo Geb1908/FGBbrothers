@@ -1,0 +1,45 @@
+$color-primary: #10203a;
+$color-secondary: #ffc533;
+$color-tertiary: #f26f63;
+$color-quaternary: #57f27e;
+$color-span--title: #4284ed;
+$color-span--title--bkgd: rgba(66, 132, 237, 0.5);
+$color-hover: #7df594;
+$color-placeholder: #757575;
+$color-black: #000000;
+$color-white: #ffffff;
+$color-body--bkgd: #ffffff;
+$color-footer--bkgd: #e5e5e5;
+$color-faqs--hover: #c3c8c3;
+$color-shadow: rgba(0, 0, 0, 0.25);
+$color-border: #e5e5e5;
+$color-gallery--dots: rgba(46, 162, 229, 1);
+$color-form--btn: $color-secondary;
+$color-card--bkgd: (
+  secondary: #ffebbf,
+  tertiary: #ffd0c8,
+  quaternary: #b7fabf,
+);
+$color-card--icon--bkgd: (
+  secondary: #ffce5c,
+  tertiary: #f8887b,
+  quaternary: #7df594,
+  color-span: #4284ed,
+  color-grey: #cccccc,
+  color-orange: #f79d00,
+);
+
+$typo-principal: "Noto Sans";
+$typo-secondary: "Montserrat";
+$title-principal: normal 800 40px/50px $typo-principal;
+$title-secondary: normal 700 16px/20px $typo-secondary;
+$title-terciary: normal 700 20px/25px $typo-principal;
+$title-quaternary: normal 700 36px/50px $typo-principal;
+$title-quinary: normal 700 16px/20px $typo-principal;
+$text-parapraph: normal 400 16px/25px $typo-secondary;
+$text-link: normal 400 14px/16px $typo-secondary;
+$text-btn--primary: normal 700 20px/25px $typo-secondary;
+$text-btn--secondary: normal 700 14px/16px $typo-secondary;
+$text-btn--subscribe: normal 700 16px/20px $typo-secondary;
+$text-footer: normal 400 12px/20px $typo-secondary;
+$text-footer--copyright: normal 400 10px/14px $typo-secondary;

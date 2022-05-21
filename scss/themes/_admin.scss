@@ -1,0 +1,26 @@
+/* START BACKGROUNDS INDEX */
+body {
+  background-color: $color-body--bkgd;
+}
+
+@media (min-width: 992px) {
+  body {
+    background-color: $color-white;
+  }
+}
+/* END BACKGROUNDS INDEX */
+/* START BACKGROUNDS PAGES */
+#body {
+  background: linear-gradient(
+    90deg,
+    #c3c8c3 0%,
+    #fdfdfd 35.94%,
+    $color-white 100%
+  );
+}
+
+#main {
+  padding: 5rem 0.5rem 8rem 0.5rem;
+  background: none;
+}
+/* END BACKGROUNDS PAGES */

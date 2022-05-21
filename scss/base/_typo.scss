@@ -1,0 +1,155 @@
+/* START TYPOGRAPHY */
+h1 {
+  font: $title-principal;
+  color: $color-primary;
+  span {
+    color: $color-span--title;
+  }
+}
+
+h2 {
+  font: $title-secondary;
+  padding: 0.5rem 1.25rem;
+  border-radius: 10px;
+  color: $color-span--title;
+  background-color: $color-span--title--bkgd;
+}
+
+h3 {
+  font: $title-terciary;
+  color: $color-black;
+}
+
+h4 {
+  font: $title-quaternary;
+  color: $color-black;
+}
+
+h5 {
+  font: $title-quinary;
+  color: $color-black;
+}
+
+p {
+  font: $text-parapraph;
+  color: $color-black;
+  span {
+    font-size: 14px;
+  }
+}
+
+li {
+  span {
+    @extend p;
+  }
+}
+
+a {
+  font: $text-link;
+  color: $color-black;
+  &.--active {
+    span {
+      font-weight: 700;
+      &:hover {
+        color: $color-white;
+      }
+    }
+  }
+  span {
+    font-weight: 700;
+    &:hover {
+      color: $color-hover;
+    }
+  }
+}
+
+i {
+  color: $color-black;
+}
+
+.btn--primary {
+  font: $text-btn--primary;
+  color: $color-white;
+  span {
+    color: $color-black;
+  }
+}
+
+.btn--secondary {
+  font: $text-btn--secondary;
+  color: $color-white;
+  span {
+    color: $color-black;
+  }
+}
+
+.btn--subscribe {
+  font: $text-btn--subscribe;
+  color: $color-white;
+}
+
+.footer__text {
+  font: $text-footer;
+  color: $color-black;
+}
+
+.footer__copyright {
+  font: $text-footer--copyright;
+  color: $color-black;
+  a {
+    font-size: 10px;
+  }
+}
+
+.contact {
+  .row {
+    .column {
+      ul {
+        li {
+          @extend p;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 64px;
+    line-height: 87px;
+  }
+  h2 {
+    font-size: 32px;
+    line-height: 43px;
+  }
+  h3 {
+    font-size: 36px;
+    line-height: 49px;
+  }
+  h4 {
+    font-size: 48px;
+    line-height: 65px;
+  }
+  h5 {
+    font-size: 24px;
+    line-height: 33px;
+  }
+  p {
+    font-size: 24px;
+    line-height: 30px;
+    span {
+      font-size: 20px;
+    }
+  }
+  a {
+    font-size: 20px;
+  }
+
+  .footer__navLink {
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-black;
+  }
+}
+
+/* END TYPOGRAPHY */
