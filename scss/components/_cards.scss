@@ -1,0 +1,195 @@
+/* START FEATURES CARDS */
+.card {
+  width: 50%;
+  height: auto;
+  overflow: visible;
+  box-shadow: 0 5px 20px 2px $color-shadow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 1rem;
+  &.colorSecondary {
+    background: map-get($color-card--bkgd, secondary);
+  }
+  &.colorTertiary {
+    background: map-get($color-card--bkgd, tertiary);
+  }
+  &.colorQuaternary {
+    background: map-get($color-card--bkgd, quaternary);
+  }
+  .card__img {
+    --size: 50px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    transform: translate(-100%, -80%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &.colorSecondary {
+      background: map-get($color-card--icon--bkgd, secondary);
+    }
+    &.colorTertiary {
+      background: map-get($color-card--icon--bkgd, tertiary);
+    }
+    &.colorQuaternary {
+      background: map-get($color-card--icon--bkgd, quaternary);
+    }
+    i {
+      color: $color-white;
+    }
+  }
+  .card__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    h5 {
+      text-align: center;
+    }
+    p {
+      text-align: start;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    .card__img {
+      transform: translate(-250%, -80%);
+    }
+  }
+}
+/* END FEATURES CARDS */
+/* START SERVICES CARDS */
+.card2 {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  background: $color-white;
+  border: 1px solid $color-border;
+  box-shadow: 0px 4px 4px $color-shadow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 1rem;
+  .card2__img {
+    --size: 50px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    &.wd {
+      background: conic-gradient(
+        from 268.96deg at 50% 50%,
+        #ec0016 0deg,
+        #fc6767 360deg
+      );
+    }
+    &.cm {
+      background: conic-gradient(
+        from 90deg at 50% 50%,
+        #ff4e50 0deg,
+        #f9d423 360deg
+      );
+    }
+    &.ga {
+      background: conic-gradient(
+        from 181.04deg at 50% 50%,
+        #f79d00 0deg,
+        #64f38c 360deg
+      );
+    }
+    &.ap {
+      background: conic-gradient(
+        from -1.04deg at 50% 50%,
+        #091e3a 0deg,
+        #2d9ee0 360deg
+      );
+    }
+  }
+  .card2__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    h5 {
+      text-align: center;
+    }
+    p {
+      text-align: start;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .card2 {
+    width: 45%;
+  }
+}
+/* END SERVICES CARDS */
+/* START MAIN-SERVICES CARDS */
+.card3 {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  background: $color-white;
+  border: 1px solid $color-border;
+  box-shadow: 0px 4px 4px $color-shadow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 1rem;
+  .card3__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    gap: 0.25rem;
+    .card3__img {
+      --size: 100px;
+      width: var(--size);
+      height: var(--size);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &.wd {
+        background-color: map-get($color-card--icon--bkgd, secondary);
+      }
+      &.oa {
+        background-color: map-get($color-card--icon--bkgd, tertiary);
+      }
+      &.sn {
+        background-color: map-get($color-card--icon--bkgd, quaternary);
+      }
+      &.bg {
+        background-color: map-get($color-card--icon--bkgd, color-span);
+      }
+      &.se {
+        background-color: map-get($color-card--icon--bkgd, color-grey);
+      }
+      &.dc {
+        background-color: map-get($color-card--icon--bkgd, color-orange);
+      }
+    }
+  }
+  .card3__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    p {
+      text-align: start;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .card3 {
+    width: 30%;
+  }
+}
+/* END MAIN-SERVICES CARDS */

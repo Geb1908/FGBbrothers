@@ -1,0 +1,44 @@
+/* START WAVES*/
+.wave {
+  position: absolute;
+  width: 100%;
+  top: 747px;
+  z-index: 0;
+}
+
+@media (min-width: 332px) {
+  .wave {
+    top: 670px;
+  }
+}
+
+@media (min-width: 369px) {
+  .wave {
+    top: 700px;
+  }
+}
+
+@media (min-width: 410px) {
+  .wave {
+    top: 735px;
+  }
+}
+
+@media (min-width: 450px) {
+  .wave {
+    top: 780px;
+  }
+}
+
+@media (min-width: 768px) {
+  .wave {
+    top: 345px;
+  }
+}
+
+@media (min-width: 992px) {
+  .wave {
+    top: 545px;
+  }
+}
+/* END WAVES*/

@@ -1,0 +1,123 @@
+/* START lAYOUT FOOTER */
+footer {
+  background-color: $color-footer--bkgd;
+  padding: 1rem;
+  div {
+    width: 95%;
+    img {
+      width: 50%;
+      padding-bottom: 1rem;
+    }
+    h3 {
+      padding-bottom: 0.5rem;
+    }
+    p:nth-child(3) {
+      padding-top: 0.25rem;
+      padding-bottom: 0.75rem;
+    }
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      list-style: none;
+    }
+    li {
+      a {
+        padding: 0rem;
+      }
+    }
+  }
+}
+.footer__text {
+  padding-bottom: 0.75rem;
+  &.--nopadding {
+    padding: 0;
+  }
+}
+.footer__icons {
+  padding-bottom: 0.5rem;
+  a {
+    padding-right: 5rem;
+  }
+}
+.footer__copyright {
+  padding-top: 0.75rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  footer {
+    div {
+      img {
+        width: 35%;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  footer {
+    display: grid;
+    grid-template-areas:
+      "logo text"
+      "nav nav";
+    grid-template-rows: 2fr auto;
+    grid-template-columns: 1fr 3fr;
+    row-gap: 0.5rem;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1550px;
+    padding: 2rem;
+    margin: 0 auto;
+    div {
+      width: 100%;
+    }
+  }
+
+  .footer__logo {
+    grid-area: logo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2rem;
+  }
+
+  .footer__logo a img {
+    width: 75%;
+  }
+
+  .footer__contact {
+    grid-area: text;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1rem;
+  }
+
+  .footer__nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: $color-black 1px solid;
+    padding-top: 1rem;
+  }
+
+  .footer__navList {
+    display: flex;
+    justify-content: left;
+    width: 49%;
+    gap: 3rem;
+  }
+
+  .footer__contactIcons a {
+    margin-right: 6rem;
+  }
+
+  .footer__copyright {
+    padding-top: 0;
+    padding-right: 1rem;
+    width: 49%;
+    text-align: end;
+  }
+}
+/* END lAYOUT FOOTER */
