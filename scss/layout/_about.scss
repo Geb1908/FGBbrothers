@@ -1,0 +1,107 @@
+/* START lAYOUT SECTION PROJECTS */
+.projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 0.5rem 2rem 0.5rem;
+  background-color: none;
+  .column {
+    .row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      img {
+        border: 1px solid $color-shadow;
+        box-shadow: 0px 4px 4px $color-shadow;
+        border-radius: 1rem;
+        width: 100%;
+      }
+    }
+    .row:nth-child(1) {
+      padding-bottom: 3rem;
+    }
+    .row:nth-child(2) {
+      gap: 3rem;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .projects {
+    margin: 0 auto;
+    width: 90%;
+    padding: 10rem 0.5rem 2rem 0.5rem;
+    .column {
+      .row {
+        a {
+          img {
+            transition: transform 400ms ease-out;
+            &:hover {
+              transform: scale(1.05);
+            }
+          }
+        }
+      }
+      .row:nth-child(2) {
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 1rem;
+        align-items: normal;
+      }
+    }
+  }
+}
+/* END lAYOUT SECTION PROJECTS */
+/* START lAYOUT SECTION SERVICES */
+.services {
+  width: 100%;
+  padding: 2rem 0.5rem 2rem 0.5rem;
+  background-color: none;
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .column:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    padding-bottom: 2rem;
+    p {
+      text-align: start;
+    }
+  }
+  .column:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .services {
+    margin: 0 auto;
+    width: 90%;
+    .row {
+      flex-direction: row;
+      .column {
+        width: 50%;
+        .container--btn {
+          z-index: 10;
+          padding-top: 1rem;
+        }
+      }
+      .column:nth-child(2) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: right;
+        gap: 1rem;
+      }
+    }
+  }
+}
+/* END lAYOUT SECTION SERVICES */

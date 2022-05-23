@@ -1,0 +1,47 @@
+/* START lAYOUT GET IN TOUCH */
+.getIntouch {
+  .row {
+    display: flex;
+    flex-direction: column;
+    .getIntouch__section {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem 0.5rem 4rem 0.5rem;
+      background-color: none;
+      div {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        gap: 5rem;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .form {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .getIntouch {
+    .row {
+      display: flex;
+      flex-direction: row-reverse;
+      width: 100%;
+      gap: 3rem;
+      .getIntouch__section {
+        width: 50%;
+      }
+      .form {
+        width: 50%;
+      }
+    }
+  }
+}
+/* END lAYOUT GET IN TOUCH */

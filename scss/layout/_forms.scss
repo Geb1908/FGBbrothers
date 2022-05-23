@@ -1,0 +1,75 @@
+/* START LAYOUT FORM */
+.form {
+  display: inline-block;
+  text-align: start;
+  line-height: 4rem;
+}
+
+.form__title {
+  color: $color-black;
+  font-size: 1.25rem;
+  font-weight: 700;
+  width: 100%;
+  display: block;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+#form {
+  fieldset {
+    border: 1px solid $color-border;
+    box-shadow: 0 5px 20px 2px $color-shadow;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  input[type="text"] {
+    cursor: text;
+    width: 46%;
+    border: 1px solid $color-border;
+    color: $color-primary;
+    background: $color-white;
+    margin: 0.1rem;
+    padding: 1rem;
+  }
+  select {
+    width: 93%;
+    border: 1px solid $color-border;
+    color: $color-primary;
+    background: $color-white;
+    margin: 0.1rem;
+    padding: 1rem;
+    font-family: "$typo-secondary", sans-serif;
+    font-size: 1rem;
+  }
+  textarea {
+    @extend select;
+    height: 20rem;
+    max-width: 100%;
+    resize: none;
+  }
+  input[type="email"] {
+    @extend select;
+    color: $color-primary;
+  }
+  input[type="submit"] {
+    cursor: pointer;
+    width: 50%;
+    border: none;
+    box-shadow: 0 5px 20px 2px $color-shadow;
+    background: $color-form--btn;
+    color: $color-black;
+    margin: 0 0 0.5px;
+    padding: 1rem;
+    font-family: "$typo-secondary", sans-serif;
+    font-size: 1rem;
+  }
+}
+
+::placeholder {
+  color: $color-placeholder;
+  font-family: "$typo-secondary", sans-serif;
+  font-size: 0.75rem;
+}
+/* END LAYOUT FORM */
